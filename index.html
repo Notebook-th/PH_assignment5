@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body> 
-   <nav class="navbar">
+<body class="bg-green-500/10"> 
+    <header>
+         <nav class="navbar">
     <div class="container mx-auto flex justify-between items-center px-4">
       <div class="flex items-center gap-2 font-bold">
         <div class="text-2xl w-[50px] h-[50px]">
@@ -41,6 +43,223 @@
       </p>
     </div>
   </section>
+    </header>
+
+    
+    <main class="container mx-auto px-4 mt-10">
+    <div class="grid lg:grid-cols-3 gap-6">
+      <!-- Cards -->
+      <section id="cards" class="lg:col-span-2 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        
+        <!-- Card 1 -->
+        <div class="card bg-base-100 shadow relative" data-service="National Emergency Number" data-number="999">
+          <button class="btn border-0 btn-sm btn-circle absolute top-6 right-6 heart">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <div class="card-body">
+            <div class="w-[30px] h-[30px] bg-red-100 p-2 rounded-lg">
+                <img src="assets/emergency.png" alt="">
+            </div>
+            <h3 class="card-title mt-2">National Emergency Number</h3>
+            <p class="text-sm text-gray-500">National Emergency</p>
+            <div class="text-xl font-bold">999</div>
+            <div class="badge bg-slate-200 rounded-4xl">All</div>
+            <div class="card-actions mt-4 justify-between">
+              <button class="btn w-[127px] btn-outline btn-sm btn-copy border-1" data-to-copy="999">
+                <i class="fa-regular fa-copy"></i>
+                Copy</button>
+              <button class="btn w-[127px] btn-primary btn-sm btn-call bg-green-600 border-0" data-service="National Emergency Number" data-number="999">
+                <i class="fa-solid fa-phone"></i>
+                Call</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card bg-base-100 shadow relative" data-service="National Emergency Number" data-number="999">
+          <button class="btn border-0 btn-sm btn-circle absolute top-6 right-6 heart">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <div class="card-body">
+            <div class="w-[30px] h-[30px] bg-red-100 p-2 rounded-lg">
+                <img src="assets/emergency.png" alt="">
+            </div>
+            <h3 class="card-title mt-2">National Emergency Number</h3>
+            <p class="text-sm text-gray-500">National Emergency</p>
+            <div class="text-xl font-bold">999</div>
+            <div class="badge bg-slate-200 rounded-4xl">All</div>
+            <div class="card-actions mt-4 justify-between">
+              <button class="btn w-[127px] btn-outline btn-sm btn-copy border-1" data-to-copy="999">
+                <i class="fa-regular fa-copy"></i>
+                Copy</button>
+              <button class="btn w-[127px] btn-primary btn-sm btn-call bg-green-600 border-0" data-service="National Emergency Number" data-number="999">
+                <i class="fa-solid fa-phone"></i>
+                Call</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card bg-base-100 shadow relative" data-service="National Emergency Number" data-number="999">
+          <button class="btn border-0 btn-sm btn-circle absolute top-6 right-6 heart">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <div class="card-body">
+            <div class="w-[30px] h-[30px] bg-red-100 p-2 rounded-lg">
+                <img src="assets/emergency.png" alt="">
+            </div>
+            <h3 class="card-title mt-2">National Emergency Number</h3>
+            <p class="text-sm text-gray-500">National Emergency</p>
+            <div class="text-xl font-bold">999</div>
+            <div class="badge bg-slate-200 rounded-4xl">All</div>
+            <div class="card-actions mt-4 justify-between">
+              <button class="btn w-[127px] btn-outline btn-sm btn-copy border-1" data-to-copy="999">
+                <i class="fa-regular fa-copy"></i>
+                Copy</button>
+              <button class="btn w-[127px] btn-primary btn-sm btn-call bg-green-600 border-0" data-service="National Emergency Number" data-number="999">
+                <i class="fa-solid fa-phone"></i>
+                Call</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="card bg-base-100 shadow relative" data-service="National Emergency Number" data-number="999">
+          <button class="btn border-0 btn-sm btn-circle absolute top-6 right-6 heart">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <div class="card-body">
+            <div class="w-[30px] h-[30px] bg-red-100 p-2 rounded-lg">
+                <img src="assets/emergency.png" alt="">
+            </div>
+            <h3 class="card-title mt-2">National Emergency Number</h3>
+            <p class="text-sm text-gray-500">National Emergency</p>
+            <div class="text-xl font-bold">999</div>
+            <div class="badge bg-slate-200 rounded-4xl">All</div>
+            <div class="card-actions mt-4 justify-between">
+              <button class="btn w-[127px] btn-outline btn-sm btn-copy border-1" data-to-copy="999">
+                <i class="fa-regular fa-copy"></i>
+                Copy</button>
+              <button class="btn w-[127px] btn-primary btn-sm btn-call bg-green-600 border-0" data-service="National Emergency Number" data-number="999">
+                <i class="fa-solid fa-phone"></i>
+                Call</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="card bg-base-100 shadow relative" data-service="National Emergency Number" data-number="999">
+          <button class="btn border-0 btn-sm btn-circle absolute top-6 right-6 heart">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <div class="card-body">
+            <div class="w-[30px] h-[30px] bg-red-100 p-2 rounded-lg">
+                <img src="assets/emergency.png" alt="">
+            </div>
+            <h3 class="card-title mt-2">National Emergency Number</h3>
+            <p class="text-sm text-gray-500">National Emergency</p>
+            <div class="text-xl font-bold">999</div>
+            <div class="badge bg-slate-200 rounded-4xl">All</div>
+            <div class="card-actions mt-4 justify-between">
+              <button class="btn w-[127px] btn-outline btn-sm btn-copy border-1" data-to-copy="999">
+                <i class="fa-regular fa-copy"></i>
+                Copy</button>
+              <button class="btn w-[127px] btn-primary btn-sm btn-call bg-green-600 border-0" data-service="National Emergency Number" data-number="999">
+                <i class="fa-solid fa-phone"></i>
+                Call</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="card bg-base-100 shadow relative" data-service="National Emergency Number" data-number="999">
+          <button class="btn border-0 btn-sm btn-circle absolute top-6 right-6 heart">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <div class="card-body">
+            <div class="w-[30px] h-[30px] bg-red-100 p-2 rounded-lg">
+                <img src="assets/emergency.png" alt="">
+            </div>
+            <h3 class="card-title mt-2">National Emergency Number</h3>
+            <p class="text-sm text-gray-500">National Emergency</p>
+            <div class="text-xl font-bold">999</div>
+            <div class="badge bg-slate-200 rounded-4xl">All</div>
+            <div class="card-actions mt-4 justify-between">
+              <button class="btn w-[127px] btn-outline btn-sm btn-copy border-1" data-to-copy="999">
+                <i class="fa-regular fa-copy"></i>
+                Copy</button>
+              <button class="btn w-[127px] btn-primary btn-sm btn-call bg-green-600 border-0" data-service="National Emergency Number" data-number="999">
+                <i class="fa-solid fa-phone"></i>
+                Call</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 7 -->
+        <div class="card bg-base-100 shadow relative" data-service="National Emergency Number" data-number="999">
+          <button class="btn border-0 btn-sm btn-circle absolute top-6 right-6 heart">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <div class="card-body">
+            <div class="w-[30px] h-[30px] bg-red-100 p-2 rounded-lg">
+                <img src="assets/emergency.png" alt="">
+            </div>
+            <h3 class="card-title mt-2">National Emergency Number</h3>
+            <p class="text-sm text-gray-500">National Emergency</p>
+            <div class="text-xl font-bold">999</div>
+            <div class="badge bg-slate-200 rounded-4xl">All</div>
+            <div class="card-actions mt-4 justify-between">
+              <button class="btn w-[127px] btn-outline btn-sm btn-copy border-1" data-to-copy="999">
+                <i class="fa-regular fa-copy"></i>
+                Copy</button>
+              <button class="btn w-[127px] btn-primary btn-sm btn-call bg-green-600 border-0" data-service="National Emergency Number" data-number="999">
+                <i class="fa-solid fa-phone"></i>
+                Call</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 8 -->
+        <div class="card bg-base-100 shadow relative" data-service="National Emergency Number" data-number="999">
+          <button class="btn border-0 btn-sm btn-circle absolute top-6 right-6 heart">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <div class="card-body">
+            <div class="w-[30px] h-[30px] bg-red-100 p-2 rounded-lg">
+                <img src="assets/emergency.png" alt="">
+            </div>
+            <h3 class="card-title mt-2">National Emergency Number</h3>
+            <p class="text-sm text-gray-500">National Emergency</p>
+            <div class="text-xl font-bold">999</div>
+            <div class="badge bg-slate-200 rounded-4xl">All</div>
+            <div class="card-actions mt-4 justify-between">
+              <button class="btn w-[127px] btn-outline btn-sm btn-copy border-1" data-to-copy="999">
+                <i class="fa-regular fa-copy"></i>
+                Copy</button>
+              <button class="btn w-[127px] btn-primary btn-sm btn-call bg-green-600 border-0" data-service="National Emergency Number" data-number="999">
+                <i class="fa-solid fa-phone"></i>
+                Call</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 9 -->
+        <div class="card bg-base-100 shadow relative" data-service="National Emergency Number" data-number="999">
+          <button class="btn border-0 btn-sm btn-circle absolute top-6 right-6 heart">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <div class="card-body">
+            <div class="w-[30px] h-[30px] bg-red-100 p-2 rounded-lg">
+                <img src="assets/emergency.png" alt="">
+            </div>
+            <h3 class="card-title mt-2">National Emergency Number</h3>
+            <p class="text-sm text-gray-500">National Emergency</p>
+            <div class="text-xl font-bold">999</div>
+            <div class="badge bg-slate-200 rounded-4xl">All</div>
+            <div class="card-actions mt-4 justify-between">
+              <button class="btn w-[127px] btn-outline btn-sm btn-copy border-1" data-to-copy="999">
+                <i class="fa-regular fa-copy"></i>
+                Copy</button>
+              <button class="btn w-[127px] btn-primary btn-sm btn-call bg-green-600 border-0" data-service="National Emergency Number" data-number="999">
+                <i class="fa-solid fa-phone"></i>
+                Call</button>
+            </div>
+          </div>
+        </div>
+    </main>
+  
 
 
 </body>
