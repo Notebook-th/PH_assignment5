@@ -7,20 +7,27 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <!-- Open the modal using ID.showModal() method -->
-<button class="btn" onclick="my_modal_1.showModal()">open modal</button>
-<dialog id="my_modal_1" class="modal">
-  <div class="modal-box">
-    <h3 class="text-lg font-bold">Hello!</h3>
-    <p class="py-4">Press ESC key or click the button below to close</p>
-    <div class="modal-action">
-      <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
-      </form>
+<body> 
+   <nav class="navbar">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <div class="flex items-center gap-2 font-bold">
+        <div class="text-2xl w-[50px] h-[50px]">
+            <img src="assets/logo.png" alt="">
+        </div>
+        <span class="text-lg text-[#006747]">Emergency <br> Service</span>
+      </div>
+      <div class="flex gap-3">
+        <div class="badge font-bold badge-lg gap-2 bg-green-100 text-emerald-900 rounded-4xl">
+        <span id="heartCount">0</span>❤️
+        </div>
+        <div class="badge font-bold badge-lg gap-2 bg-green-100 text-emerald-900 rounded-4xl">
+        <span id="coinCount">100</span>🪙
+        </div>
+        <div class="badge font-bold badge-lg gap-2 text-emerald-900 bg-green-400 rounded-4xl">
+        <span id="copyCount">0</span> Copy
+        </div>
+      </div>
     </div>
-  </div>
-</dialog>
+  </nav>
 </body>
 </html>
