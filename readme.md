@@ -1,9 +1,9 @@
-# Emergency Service Directory — README
+# Emergency Service Directory 
 
-This small project implements an **Emergency Service Directory** with a navbar, hero, cards, and a call history panel. It is built with **HTML, CSS, and vanilla JavaScript** only (no frameworks).
+This small project implements an **Emergency Service Directory** with a navbar, hero, cards, and a call history panel. It is built with **HTML, CSS, and vanilla JavaScript** only.
 
 ## How to Run
-Just open `index.html` in any browser. All assets are local.
+Just open `index.html` file in any browser. All assets are local.
 
 ---
 
@@ -15,9 +15,9 @@ Just open `index.html` in any browser. All assets are local.
 
 - **`getElementsByClassName(className)`**: Returns a **live HTMLCollection** of all elements with that class. It updates automatically if the DOM changes. You usually convert it to an array before using array methods.
 
-- **`querySelector(cssSelector)`**: Returns the **first** element that matches a **CSS selector** (e.g., `#nav .item[data-x="1"]`). Very flexible.
+- **`querySelector(cssSelector)`**: Returns the **first** element that matches a **CSS selector** (e.g., `#nav .item[data-x="1"]`). It is Very flexible.
 
-- **`querySelectorAll(cssSelector)`**: Returns a **static NodeList** of **all** elements that match the CSS selector. It does **not** auto-update if the DOM changes (you must call it again).
+- **`querySelectorAll(cssSelector)`**: Returns a **static NodeList** of **all** elements that match the CSS selector. It does **not** auto update if the DOM changes (have to call it again).
 
 ### 2) How to create and insert a new element into the DOM
 
@@ -72,10 +72,10 @@ document.querySelector('#list').addEventListener('click', (e) => {
 
 ## Folder Structure
 ```
-emergency-service-directory/
+
 ├─ index.html
 └─ assets/
-   └─ logo.png
+   └─ Pictures and logos
 ```
 
-Enjoy building! ✨
+Enjoy building! ✨✌️
