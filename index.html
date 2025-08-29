@@ -20,10 +20,12 @@
       </div>
       <div class="flex gap-3">
         <div class="badge font-bold badge-lg gap-2 bg-green-100 text-emerald-900 rounded-4xl">
-        <span id="heartCount">0</span>❤️
+        <span id="heartCount">0</span>
+        <i class="fa-solid fa-heart" style="color: #f20d0d;"></i>
         </div>
         <div class="badge font-bold badge-lg gap-2 bg-green-100 text-emerald-900 rounded-4xl">
-        <span id="coinCount">100</span>🪙
+        <span id="coinCount">100</span>
+        <i class="fa-brands fa-bitcoin" style="color: #FFD43B;"></i>
         </div>
         <div class="badge font-bold badge-lg gap-2 text-emerald-900 bg-green-400 rounded-4xl">
         <span id="copyCount">0</span> Copy
@@ -67,17 +69,19 @@
             <div class="text-xl font-bold">999</div>
             <div class="badge bg-slate-200 rounded-4xl">All</div>
             <div class="card-actions mt-4 justify-between">
-              <button class="btn w-[127px] btn-outline btn-sm btn-copy border-1 inline-flex" data-to-copy="999">
+             <div class="flex flex-col sm:flex-row gap-3 w-full">
+                 <button class="btn-copy flex-1 flex items-center justify-center gap-2 py-2 px-4 border border-gray-300 rounded-lg text-gray-700 font-medium hover:bg-gray-200" data-to-copy="999">
                 <i class="fa-regular fa-copy"></i>
                 Copy</button>
-              <button class="btn w-[127px] btn-primary btn-sm btn-call bg-green-600 border-0 inline-flex" data-service="National Emergency Number" data-number="999" >
+              <button class="btn-call flex-1 flex items-center justify-center gap-2 py-2 px-4 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 " data-service="National Emergency Number" data-number="999" >
                 <i class="fa-solid fa-phone"></i>
                 Call</button>
+             </div>
             </div>
           </div>
         </div>
         <!-- card 2 -->
-        <div class="card bg-base-100 shadow relative" data-service="National Emergency Number" data-number="999">
+        <div class="card bg-base-100 shadow relative" data-service="Police helpline number" data-number="999">
           <button class="btn border-0 btn-sm btn-circle absolute top-6 right-6 heart">
             <i class="fa-regular fa-heart"></i>
           </button>
@@ -90,15 +94,18 @@
             <div class="text-xl font-bold">999</div>
             <div class="badge bg-slate-200 rounded-4xl">Police</div>
             <div class="card-actions mt-4 justify-between">
-              <button class="btn w-[127px] btn-outline btn-sm btn-copy border-1" data-to-copy="999">
+              <div class="flex flex-col sm:flex-row gap-3 w-full">
+                 <button class="btn-copy flex-1 flex items-center justify-center gap-2 py-2 px-4 border border-gray-300 rounded-lg text-gray-700 font-medium hover:bg-gray-200" data-to-copy="999">
                 <i class="fa-regular fa-copy"></i>
                 Copy</button>
-              <button class="btn w-[127px] btn-primary btn-sm btn-call bg-green-600 border-0" data-service="National Emergency Number" data-number="999">
+              <button class="btn-call flex-1 flex items-center justify-center gap-2 py-2 px-4 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 " data-service="National Emergency Number" data-number="999" >
                 <i class="fa-solid fa-phone"></i>
                 Call</button>
+             </div>
             </div>
           </div>
         </div>
+        
         <!-- card 3 -->
         <div class="card bg-base-100 shadow relative" data-service="Fire Service" data-number="999">
           <button class="btn border-0 btn-sm btn-circle absolute top-6 right-6 heart">
@@ -113,12 +120,14 @@
             <div class="text-xl font-bold">999</div>
             <div class="badge bg-slate-200 rounded-4xl">Fire</div>
             <div class="card-actions mt-4 justify-between">
-              <button class="btn w-[127px] btn-outline btn-sm btn-copy border-1" data-to-copy="999">
+              <div class="flex flex-col sm:flex-row gap-3 w-full">
+                 <button class="btn-copy flex-1 flex items-center justify-center gap-2 py-2 px-4 border border-gray-300 rounded-lg text-gray-700 font-medium hover:bg-gray-200" data-to-copy="999">
                 <i class="fa-regular fa-copy"></i>
                 Copy</button>
-              <button class="btn w-[127px] btn-primary btn-sm btn-call bg-green-600 border-0" data-service="Fire Service" data-number="999">
+              <button class="btn-call flex-1 flex items-center justify-center gap-2 py-2 px-4 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 " data-service="`Fire Service" data-number="999" >
                 <i class="fa-solid fa-phone"></i>
                 Call</button>
+             </div>
             </div>
           </div>
         </div>
@@ -131,17 +140,19 @@
             <div class="w-[30px] h-[30px] bg-red-100 p-2 rounded-lg">
                 <img src="assets/ambulance.png" alt="">
             </div>
-            <h3 class="card-title mt-2">Ambulkance Service</h3>
+            <h3 class="card-title mt-2">Ambulance Service</h3>
             <p class="text-sm text-gray-500">Ambulance</p>
             <div class="text-xl font-bold">1994-999999</div>
             <div class="badge bg-slate-200 rounded-4xl">Health</div>
             <div class="card-actions mt-4 justify-between">
-              <button class="btn w-[127px] btn-outline btn-sm btn-copy border-1" data-to-copy="1994-999999">
+              <div class="flex flex-col sm:flex-row gap-3 w-full">
+                 <button class="btn-copy flex-1 flex items-center justify-center gap-2 py-2 px-4 border border-gray-300 rounded-lg text-gray-700 font-medium hover:bg-gray-200" data-to-copy="1994-999999">
                 <i class="fa-regular fa-copy"></i>
                 Copy</button>
-              <button class="btn w-[127px] btn-primary btn-sm btn-call bg-green-600 border-0" data-service="Ambulance" data-number="1994-999999">
+              <button class="btn-call flex-1 flex items-center justify-center gap-2 py-2 px-4 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 " data-service="Ambulance" data-number="1994-999999" >
                 <i class="fa-solid fa-phone"></i>
                 Call</button>
+             </div>
             </div>
           </div>
         </div>
@@ -159,18 +170,20 @@
             <div class="text-xl font-bold">109</div>
             <div class="badge bg-slate-200 rounded-4xl">Help</div>
             <div class="card-actions mt-4 justify-between">
-              <button class="btn w-[127px] btn-outline btn-sm btn-copy border-1" data-to-copy="999">
+              <div class="flex flex-col sm:flex-row gap-3 w-full">
+                 <button class="btn-copy flex-1 flex items-center justify-center gap-2 py-2 px-4 border border-gray-300 rounded-lg text-gray-700 font-medium hover:bg-gray-200" data-to-copy="109">
                 <i class="fa-regular fa-copy"></i>
                 Copy</button>
-              <button class="btn w-[127px] btn-primary btn-sm btn-call bg-green-600 border-0" data-service="W&C Helpline" data-number="109">
+              <button class="btn-call flex-1 flex items-center justify-center gap-2 py-2 px-4 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 " data-service="Woman and Child Helpline" data-number="109" >
                 <i class="fa-solid fa-phone"></i>
                 Call</button>
+             </div>
             </div>
           </div>
         </div>
         
         <!-- card 6 -->
-        <div class="card bg-base-100 shadow relative" data-service="AntiC Helpline" data-number="109">
+        <div class="card bg-base-100 shadow relative" data-service="Anti Corruption Helpline" data-number="109">
           <button class="btn border-0 btn-sm btn-circle absolute top-6 right-6 heart">
             <i class="fa-regular fa-heart"></i>
           </button>
@@ -183,12 +196,14 @@
             <div class="text-xl font-bold">109</div>
             <div class="badge bg-slate-200 rounded-4xl">Govt.</div>
             <div class="card-actions mt-4 justify-between">
-              <button class="btn w-[127px] btn-outline btn-sm btn-copy border-1" data-to-copy="109">
+              <div class="flex flex-col sm:flex-row gap-3 w-full">
+                 <button class="btn-copy flex-1 flex items-center justify-center gap-2 py-2 px-4 border border-gray-300 rounded-lg text-gray-700 font-medium hover:bg-gray-200" data-to-copy="109">
                 <i class="fa-regular fa-copy"></i>
                 Copy</button>
-              <button class="btn w-[127px] btn-primary btn-sm btn-call bg-green-600 border-0" data-service="National Emergency Number" data-number="109">
+              <button class="btn-call flex-1 flex items-center justify-center gap-2 py-2 px-4 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 " data-service="Anti Corruption Helpline" data-number="109" >
                 <i class="fa-solid fa-phone"></i>
                 Call</button>
+             </div>
             </div>
           </div>
         </div>
@@ -206,12 +221,14 @@
             <div class="text-xl font-bold">16216</div>
             <div class="badge bg-slate-200 rounded-4xl">Electricity</div>
             <div class="card-actions mt-4 justify-between">
-              <button class="btn w-[127px] btn-outline btn-sm btn-copy border-1" data-to-copy="16216">
+              <div class="flex flex-col sm:flex-row gap-3 w-full">
+                 <button class="btn-copy flex-1 flex items-center justify-center gap-2 py-2 px-4 border border-gray-300 rounded-lg text-gray-700 font-medium hover:bg-gray-200" data-to-copy="16216">
                 <i class="fa-regular fa-copy"></i>
                 Copy</button>
-              <button class="btn w-[127px] btn-primary btn-sm btn-call bg-green-600 border-0" data-service="Electricity helpline" data-number="16216">
+              <button class="btn-call flex-1 flex items-center justify-center gap-2 py-2 px-4 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 " data-service="Electricity Helkline" data-number="16216" >
                 <i class="fa-solid fa-phone"></i>
                 Call</button>
+             </div>
             </div>
           </div>
         </div>
@@ -229,12 +246,14 @@
             <div class="text-xl font-bold">16445</div>
             <div class="badge bg-slate-200 rounded-4xl">NGO</div>
             <div class="card-actions mt-4 justify-between">
-              <button class="btn w-[127px] btn-outline btn-sm btn-copy border-1" data-to-copy="16445">
+             <div class="flex flex-col sm:flex-row gap-3 w-full">
+                 <button class="btn-copy flex-1 flex items-center justify-center gap-2 py-2 px-4 border border-gray-300 rounded-lg text-gray-700 font-medium hover:bg-gray-200 " data-to-copy="16445">
                 <i class="fa-regular fa-copy"></i>
                 Copy</button>
-              <button class="btn w-[127px] btn-primary btn-sm btn-call bg-green-600 border-0" data-service="Brac" data-number="16445">
+              <button class="btn-call flex-1 flex items-center justify-center gap-2 py-2 px-4 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700" data-service="Brac Helpline" data-number="16445" >
                 <i class="fa-solid fa-phone"></i>
                 Call</button>
+             </div>
             </div>
           </div>
         </div>
@@ -252,12 +271,14 @@
             <div class="text-xl font-bold">163</div>
             <div class="badge bg-slate-200 rounded-4xl">Travel</div>
             <div class="card-actions mt-4 justify-between">
-              <button class="btn w-[127px] btn-outline btn-sm btn-copy border-1" data-to-copy="163">
+             <div class="flex flex-col sm:flex-row gap-3 w-full">
+                 <button class="btn-copy flex-1 flex items-center justify-center gap-2 py-2 px-4 border border-gray-300 rounded-lg text-gray-700 font-medium hover:bg-gray-200 " data-to-copy="163">
                 <i class="fa-regular fa-copy"></i>
                 Copy</button>
-              <button class="btn w-[127px] btn-primary btn-sm btn-call bg-green-600 border-0" data-service="16445" data-number="163">
+              <button class="btn-call flex-1 flex items-center justify-center gap-2 py-2 px-4 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700" data-service="Railway Helpline" data-number="163" >
                 <i class="fa-solid fa-phone"></i>
                 Call</button>
+             </div>
             </div>
           </div>
         </div>
@@ -271,16 +292,87 @@
             <h3 class="card-title text-lg ">
                 <i class="fa-regular fa-clock"></i>
                  Call History</h3>
-            <button id="clearHistory" class="btn btn-primary btn-sm btn-call bg-green-600 border-0 rounded-4xl" >Clear</button>
+            <button id="clearHistory" class="btn btn-primary btn-sm bg-green-600 border-0 rounded-4xl" >Clear</button>
           </div>
-          
+          <ul id="historyList" class="mt-4 space-y-2 max-h-[500px] overflow-auto"></ul>
         </div>
-    </div>
+         </div>
         </section>
-
-
     </main>
 
+     <script>
+    var coins = 100, likes = 0, copies = 0;
+    const hrtcnt = document.getElementById('heartCount');
+    const coincnt  = document.getElementById('coinCount');
+    const cpycnt  = document.getElementById('copyCount');
+    const historyList  = document.getElementById('historyList');
+    const clearBtn     = document.getElementById('clearHistory');
+
+    document.querySelectorAll('.card .heart').forEach(btn => {
+      btn.addEventListener('click', () => {
+        likes++;
+        hrtcnt.textContent = likes;
+      });
+    });
+
+    async function copyToClipboard(text){
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      }
+    }
+    document.querySelectorAll('.btn-copy').forEach(btn=>
+    {
+      btn.addEventListener('click', async() =>{
+        const text = btn.dataset.toCopy;
+        await copyToClipboard(text);
+        alert('Number copied: ' + text);
+        copies++;
+        cpycnt.textContent = copies;
+      });
+    });
+
+    function addHistoryItem(service, number){
+      const time = new Date().toLocaleString();
+      const li = document.createElement('li');
+      li.className = "flex justify-between items-center p-2 border rounded border-0 bg-base-200";
+      li.innerHTML = 
+      `<div>
+        <div class="font-bold">
+            ${service}
+        </div>
+        <div class="text-sm">
+            ${number}
+        </div>
+        </div>
+
+        <div class="text-xs text-gray-500">
+            ${time}
+        </div>`;
+      historyList.prepend(li);
+    }
+    document.querySelectorAll('.btn-call').forEach(btn=> {
+      btn.addEventListener('click', () => {
+        const service = btn.dataset.service, number = btn.dataset.number;
+        if (coins < 20) {
+          alert('Not enough coins, need atleast 20 to call');
+          return;
+        }
+        alert('Calling ' + service + ' : ' + number);
+        coins -= 20;
+        coincnt.textContent= coins;
+        addHistoryItem(service, number);
+      });
+    });
+
+    clearBtn.addEventListener('click', () => historyList.innerHTML = '');
+  </script>
 
   
 

@@ -1,165 +1,81 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-005
+# Emergency Service Directory — README
 
-### 📅 Deadline For 60 marks: 29th August, 2025 (11:59 pm ⏱️)
+This small project implements an **Emergency Service Directory** with a navbar, hero, cards, and a call history panel. It is built with **HTML, CSS, and vanilla JavaScript** only (no frameworks).
 
-### 📅 No Deadline For 50 marks
-
-### 📅 Deadline For 30 marks: Any time after 29th August.
-
----
-
-## ✅ Main Requirements (50 Marks)
-
-### 1. Navbar
-
-- **Website name & logo** on the left as Figma
-- **Heart icon, coin count (default-100), and Copy Count** on the right as Figma
+## How to Run
+Just open `index.html` in any browser. All assets are local.
 
 ---
 
-### 2. Hero Section
+## Answers to the Required Questions
 
-- **Background Gradient** in the Whole Section
-- **A Relevant Logo** at the top-center
-- **Section Title** in the center
-- **A Relevant Slogan** in the bottom Center
+### 1) Difference between `getElementById`, `getElementsByClassName`, and `querySelector` / `querySelectorAll`
 
----
+- **`getElementById(id)`**: Returns **one** element that has the exact `id`. It’s fast and specific. If the id doesn’t exist, it returns `null`.
 
-### 2. Main Section
+- **`getElementsByClassName(className)`**: Returns a **live HTMLCollection** of all elements with that class. It updates automatically if the DOM changes. You usually convert it to an array before using array methods.
 
-This Section will have layout as figma
+- **`querySelector(cssSelector)`**: Returns the **first** element that matches a **CSS selector** (e.g., `#nav .item[data-x="1"]`). Very flexible.
 
-<table border=1 width="100%" cellpadding="50">
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
- </tr>
- <tr>
-    <td colspan=9 >Card Section</td>
-    <td colspan=3>History Section</td>
- </tr>
-</table>
+- **`querySelectorAll(cssSelector)`**: Returns a **static NodeList** of **all** elements that match the CSS selector. It does **not** auto-update if the DOM changes (you must call it again).
 
-### Emergency Hotline Section
+### 2) How to create and insert a new element into the DOM
 
-- **Show Minimum 6 cards**. Each card will contain:
-  - Icon or Image
-  - Relevant Name
-  - Relevant Name in English
-  - Hotline number for calling
-  - Category Badge
-  - 💗 icon at left
-  - **2 buttons** at the bottom: Copy and Call with icons as Figma
+```js
+const li = document.createElement('li');      // 1) create
+li.textContent = 'New item';                  // 2) configure
+li.classList.add('todo');                     // 3) style/attributes
+document.querySelector('#list').append(li);   // 4) insert into the DOM
+```
+Other useful insertion APIs: `prepend`, `before`, `after`, `replaceWith`, and `insertAdjacentHTML(position, html)`.
 
-### History Section
+### 3) What is Event Bubbling and how does it work?
 
-- **A white Background** in the whole section
-- **History Title with icon** at the top-left as Figma
-- **Clear History Button** at the top-right as Figma
+**Event bubbling** means that when an event happens on an element (like a button), the event **travels upward** through its ancestors: button → card → section → document. Each ancestor can listen for the same event type. This is the default phase for most events in browsers. You can stop bubbling with `event.stopPropagation()`.
 
----
+### 4) What is Event Delegation? Why is it useful?
 
-### 3. Responsiveness (5 Marks)
+**Event delegation** is a pattern where you **attach one listener to a parent** element and handle events for **child elements** by checking `event.target` (or `closest(...)`). It’s useful because:
 
-- Website should be fully **responsive for mobile devices** (implementation up to you)
+- You add **fewer listeners** (better performance and memory).
+- It **works for future elements** added dynamically (no need to re-bind).
+- Cleaner code for lists, tables, and grids.
 
----
-
-## Functionalities
-
-### 4. Heart Icons
-
-- Clicking on the 💗 **heart icon** of any card will increase the count in the Navbar
-
----
-
-### 5. Call Buttons
-
-- On clicking a card's **Call Button**, following actions will happen:
-  - Show an **alert** with a message including the service name and number
-  - Each call will **cut 20 coins**. Reduce Coin after each click.
-  - If coins are less than 20, show a relevant alert and terminate the process.
-  - Add this service into the **Call History section** with:
-    - Service name
-    - Service number
-
----
-
-### 5. Call History Section
-
-- Show all called services with name & number. This will empty initially. when call button clicked it will filled dynamically.
-- A **Clear History button** on the right
-- Clicking this button will remove all data from call history
-
----
-
-## Create Readme
-
-You have to create a `Readme.md` file. and write down following questions. Dont Try to copy paste from AI Tools. Just write what you know about these. If you don't know , then search , learn , understand and then write.
-
-### 6. Answer the following questions clearly:
-
-1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
-2. How do you **create and insert a new element into the DOM**?
-3. What is **Event Bubbling** and how does it work?
-4. What is **Event Delegation** in JavaScript? Why is it useful?
-5. What is the difference between **preventDefault() and stopPropagation()** methods?
-
----
-
-## 🧪 Challenges Part (10 Marks)
-
-- On clicking the **Copy button**, show an alert and **increase the copy count** (3 Marks)
-
-- Hotline number will be **copied on click** so it can be pasted anywhere (4 Marks)
-
-💡Hint: You can ask for Help from `ChatGPT` Mamma . Just copy the below prompt , generate answer. use it with your own way.
-
-```bash
-I have a card with some text and a button inside it. I want that when a user clicks the button, some specific text from the card is copied to the clipboard using JavaScript. Please provide the code and explain it step by step.
+Example:
+```js
+document.querySelector('#list').addEventListener('click', (e) => {
+  const item = e.target.closest('.todo');
+  if (!item) return;
+  // handle click for any .todo inside #list, even future ones
+});
 ```
 
-- After clicking on the **Call button**, the **exact time of the call** will be shown in the Call History section (3 Marks)
+### 5) Difference between `preventDefault()` and `stopPropagation()`
 
-💡Hint: Search Google with that below question
+- **`preventDefault()`**: Stops the **default browser action** (e.g., prevent a link from navigating, stop form submission).
+- **`stopPropagation()`**: Stops the **event from bubbling** to parent elements (ancestors). They solve different problems and can be used together if needed.
 
-```bash
-How to get current local time in js
+---
+
+## Notes on Features Implemented
+
+- **Navbar counters**: Heart, coins (start at 100), copy count.
+- **Hero**: Full-width gradient, logo, title, slogan.
+- **Cards**: Minimum of 6 cards with icon, name (Bangla context), English name, hotline, badge, heart, and actions.
+- **Heart**: Clicking any heart increases the total heart count.
+- **Copy**: Copies the hotline number to the clipboard and increases the copy counter.
+- **Call**: Shows an alert with service & number, deducts 20 coins (if possible), and appends an entry to **Call History** with the **local date & time**.
+- **Call History**: Has a Clear button to remove all entries.
+- **Responsive**: Cards stack on small screens; history moves below the grid.
+
+---
+
+## Folder Structure
+```
+emergency-service-directory/
+├─ index.html
+└─ assets/
+   └─ logo.png
 ```
 
----
-
-## ⚙️ Technology Stack
-
-- HTML
-- CSS ( Vanilla , Tailwind CSS , DaisyUI , Others - wheatever you like )
-- JavaScript ( Vanilla only. No Framework / Library Allowed )
-
----
-
-## 📌 Rules
-
-- ✅ Minimum **5 meaningful commits** required
-- ❌ No Lorem Ipsum or dummy placeholder text. Use **relevant content only**
-
----
-
-## 🔗 What to Submit
-
-- 📂 **GitHub Repository**
-- 🌐 **Live Link**
-
----
-
-# Let's Code and Achieve your Dream 🎯
+Enjoy building! ✨
